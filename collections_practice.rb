@@ -83,7 +83,7 @@ def organize_schools(hash_of_schools)
   hash_of_schools.each do |school_key, location_value|
     location = location_value[:location]
     if organized_schools[location]
-      organized_schools[location] << school_key
+      organized_schools[location].push(school_key)
     
   end
 end
