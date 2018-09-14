@@ -84,20 +84,10 @@ def organize_schools(hash_of_schools)
     location = location_value[:location]
     if organized_schools[location]
       organized_schools[location].push(school_key)
-    
-  end
-end
-
-def organize_schools(schools)
-  organized_schools = {}
-  schools.each do |name, location_hash|
-    location = location_hash[:location]
-    if organized_schools[location]
-      organized_schools[location] << name
-    else
-      organized_schools[location] = []
-      organized_schools[location] << name
-    end
+    else 
+      puts 'fjbfkjdv'
   end
   organized_schools
+  binding.pry
 end
+
