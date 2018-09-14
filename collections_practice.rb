@@ -68,11 +68,18 @@ end
 # data [{"blake"=>{:awesomeness=>10, :height=>"74", :last_name=>"johnson"}, "ashley"=>{:awesomeness=>9, :height=>60, :last_name=>"dubs"}}]
 
 
-def find_cool
-  
+def find_cool(array)
+  cool_array = []
+  array.each do |person_data|
+    if person_data[:temperature] == 'cool'
+      cool_array << person_data
+    end
+  end
+  cool_array
 end
 
-def organize_schools
+def organize_schools(array)
+  
 end
 
 
