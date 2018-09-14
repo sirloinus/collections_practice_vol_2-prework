@@ -78,7 +78,7 @@ def find_cool(array)
   cool_array
 end
 
-def organize_schools(array)
+def organize_schools(hash_of_schools)
   
 end
 
