@@ -82,9 +82,9 @@ def organize_schools(hash_of_schools)
   organized_schools = {}
   hash_of_schools.each do |school_key, location_value|
     location = location_value[:location]
-    if organized_schools[location]
+    if organized_schools[location]    #if location exists in org schools hash, add the school
       organized_schools[location].push(school_key)
-    else 
+    else      #else create a new key (the location) and add the school 
       organized_schools[location] = [school_key]
     end
   end
