@@ -52,7 +52,16 @@ end
 def merge_data(keys, data)
   combined = []
   keys.each do |person|
-    
+    name = person[:first_name]
+    data.each do |person_data|
+      if person_data[name]
+        merged_person = person_data[name]
+        merged_person[:first_name] = name
+        combined << merged_person
+      end
+    end
+  end
+  combined
 end
 
 # keys  [{:first_name=>"blake"}, {:first_name=>"ashley"}]
@@ -60,6 +69,7 @@ end
 
 
 def find_cool
+  
 end
 
 def organize_schools
