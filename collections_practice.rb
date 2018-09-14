@@ -89,6 +89,5 @@ def organize_schools(hash_of_schools)
     end
   end
   organized_schools
-  binding.pry
 end
 
