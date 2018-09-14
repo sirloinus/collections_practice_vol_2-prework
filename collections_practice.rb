@@ -85,7 +85,7 @@ def organize_schools(hash_of_schools)
     if organized_schools[location]
       organized_schools[location].push(school_key)
     else 
-      puts 'fjbfkjdv'
+      organized_schools[location] = [school_key]
     end
   end
   organized_schools
