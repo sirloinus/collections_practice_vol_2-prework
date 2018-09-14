@@ -86,6 +86,7 @@ def organize_schools(hash_of_schools)
       organized_schools[location].push(school_key)
     else 
       puts 'fjbfkjdv'
+    end
   end
   organized_schools
   binding.pry
