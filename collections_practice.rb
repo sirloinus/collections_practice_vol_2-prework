@@ -80,8 +80,8 @@ end
 
 def organize_schools(hash_of_schools)
   organized_schools = {}
-  hash_of_schools.each do |school, location|
-    location =
+  hash_of_schools.each do |school_key, location_value|
+    location = location_value[:location]
     binding.pry
   end
 end
