@@ -81,7 +81,3 @@ end
 def organize_schools(hash_of_schools)
   
 end
-
-
-
-
