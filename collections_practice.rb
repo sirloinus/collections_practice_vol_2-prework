@@ -81,7 +81,7 @@ end
 def organize_schools(hash_of_schools)
   organized_schools = {}
   hash_of_schools.each do |school, location|
-    organized_schools
+    location =
     binding.pry
   end
 end
