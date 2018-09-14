@@ -35,11 +35,29 @@ def remove_non_strings(array)
   string_array
 end
 
-def count_elements
+# def count_elements(array)
+#   array.each_with_object(Hash.new(0)) do |pair, hash|
+#     hash[pair] += 1
+#   end
+# end
+
+def count_elements(array)
+  new_array = array.uniq
+  new_array.each do |hash|
+    hash[:count] = array.count(hash)
+  end
+  new_array
 end
 
-def merge_data
+def merge_data(keys, data)
+  combined = []
+  keys.each do |person|
+    
 end
+
+# keys  [{:first_name=>"blake"}, {:first_name=>"ashley"}]
+# data [{"blake"=>{:awesomeness=>10, :height=>"74", :last_name=>"johnson"}, "ashley"=>{:awesomeness=>9, :height=>60, :last_name=>"dubs"}}]
+
 
 def find_cool
 end
